@@ -1,9 +1,9 @@
 words = ['cat','window','defenetrate']
+words.insert(0,'dog')
+print(words)
 for w in words:
-    print(w,len(w))
-for x in words:
-    if len(x) > 6 :
-        words.insert(0,x)
+    if len(w) > 6:
+        words.insert(0,w)
         if len(words) > 6:
             break
-print (words)
+print(words)
